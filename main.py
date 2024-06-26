@@ -1,6 +1,7 @@
 #code
 #katherine tumbaco
 
+
 class GymMembership:
   
   def add_additional_features(self, features):
