@@ -1,6 +1,5 @@
-#code
-#katherine tumbaco
 
+#katherine tumbaco
 
 class GymMembership:
   
