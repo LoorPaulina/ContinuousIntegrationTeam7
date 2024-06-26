@@ -21,13 +21,10 @@ class GymMembership:
         if self.num_members >= 2:
             self.total_cost *= 0.9  # Apply 10% discount for group memberships
         
-        if self.total_cost > 400:
-            self.total_cost -= 50
-        elif self.total_cost > 200:
-            self.total_cost -= 20
-        
+        self.get_discount() #yoser
+
         if self.selected_plan == 'Premium':
-            self.total_cost *= 1.15  # Apply 15% surcharge for premium membership features
+            self.premiun_membership()
         
         return self.total_cost
   
