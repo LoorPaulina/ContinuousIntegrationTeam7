@@ -1,5 +1,15 @@
 class GymMembership:
-     def calculate_cost(self):
+    
+    
+    def __init__(self):
+        self.membership_plans = {
+        'Basic': {'cost': 50, 'benefits': ['Access to gym equipment']},
+        'Premium': {'cost': 100, 'benefits': ['Access to gym equipment', 'Access to exclusive gym facilities', 'Specialized training programs']},
+        'Family': {'cost': 150, 'benefits': ['Access to gym equipment', 'Family access for up to 4 members']}
+        }
+
+
+    def calculate_cost(self):
         if not self.selected_plan:
             raise ValueError("No membership plan selected.")
         
@@ -21,12 +31,6 @@ class GymMembership:
         
         return self.total_cost
   
-    def __init__(self):
-        self.membership_plans = {
-        'Basic': {'cost': 50, 'benefits': ['Access to gym equipment']},
-        'Premium': {'cost': 100, 'benefits': ['Access to gym equipment', 'Access to exclusive gym facilities', 'Specialized training programs']},
-        'Family': {'cost': 150, 'benefits': ['Access to gym equipment', 'Family access for up to 4 members']}
-        }
 
     def display_membership_plans(self):
         print("Available Membership Plans:")
