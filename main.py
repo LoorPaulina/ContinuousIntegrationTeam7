@@ -86,7 +86,8 @@ class GymMembership:
         )
 
 
-        self.total_cost = (base_cost * self.num_members) + additional_features_cost
+        cost_members = base_cost * self.num_members
+        self.total_cost = cost_members + (additional_features_cost * self.num_members)
 
         if self.num_members >= 2:
             self.total_cost *= 0.9  # Apply 10% discount for group memberships
