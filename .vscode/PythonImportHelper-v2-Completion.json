@@ -1,11 +1,37 @@
 [
     {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "GymMembership",
+        "importPath": "main",
+        "description": "main",
+        "isExtraImport": true,
+        "detail": "main",
+        "documentation": {}
+    },
+    {
         "label": "GymMembership",
         "kind": 6,
         "importPath": "main",
         "description": "main",
         "peekOfCode": "class GymMembership:\n    \"\"\"Gym Membership Management System\"\"\"\n    def __init__(self):\n        self.membership_plans = {\n        'Basic': {'cost': 50, \n                  'benefits': ['Access to gym equipment'], \n                  'available': True},\n        'Premium': {'cost': 100, \n                    'benefits': ['Access to gym equipment', \n                                 'Access to exclusive gym facilities', ",
         "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "TestGymMembership",
+        "kind": 6,
+        "importPath": "unittesting",
+        "description": "unittesting",
+        "peekOfCode": "class TestGymMembership(unittest.TestCase):\n    \"\"\" Testing \"\"\"\n    def setUp(self):\n        # Configurar una instancia de GymMembership para cada prueba\n        self.membership = GymMembership()\n    def test_select_membership_plan_valid(self):\n        \"\"\" Test select member Valid Select Plan \"\"\"\n        self.membership.select_membership_plan('Basic', 1)\n        self.assertEqual(self.membership.selected_plan, 'Basic')\n        self.assertEqual(self.membership.num_members, 1)",
+        "detail": "unittesting",
         "documentation": {}
     }
 ]
