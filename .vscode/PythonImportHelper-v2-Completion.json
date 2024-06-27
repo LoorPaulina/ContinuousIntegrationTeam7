@@ -4,7 +4,7 @@
         "kind": 6,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "class GymMembership:\n    def __init__(self):\n        self.membership_plans = {\n        'Basic': {'cost': 50, 'benefits': ['Access to gym equipment'], 'available': True},\n        'Premium': {'cost': 100, 'benefits': ['Access to gym equipment', 'Access to exclusive gym facilities', 'Specialized training programs'], 'available': True},\n        'Family': {'cost': 150, 'benefits': ['Access to gym equipment', 'Specialized training programs'], 'available': False}\n        }\n        self.additional_features = {\n            'Personal Training': 25,\n            'Group Classes': 15",
+        "peekOfCode": "class GymMembership:\n    \"\"\"Gym Membership Management System\"\"\"\n    def __init__(self):\n        self.membership_plans = {\n        'Basic': {'cost': 50, \n                  'benefits': ['Access to gym equipment'], \n                  'available': True},\n        'Premium': {'cost': 100, \n                    'benefits': ['Access to gym equipment', \n                                 'Access to exclusive gym facilities', ",
         "detail": "main",
         "documentation": {}
     }
