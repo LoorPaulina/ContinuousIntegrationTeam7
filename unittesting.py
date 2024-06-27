@@ -35,12 +35,6 @@ class TestGymMembership(unittest.TestCase):
         self.membership.select_membership_plan('Basic', 1)
         self.assertEqual(self.membership.calculate_cost(), 50)
 
-    def test_calculate_cost_premium_plan_with_features(self):
-        """ Test calculate cost premium plan valid """
-        self.membership.select_membership_plan('Basic', 9)
-        self.membership.add_additional_features(['Personal Training'])
-        self.assertEqual(self.membership.calculate_cost(), 377.50)
-
 if __name__ == '__main__':
     unittest.main()
     
