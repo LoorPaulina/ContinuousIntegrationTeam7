@@ -1,0 +1,11 @@
+[
+    {
+        "label": "GymMembership",
+        "kind": 6,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "class GymMembership:\n    #katherine tumbaco\n    def add_additional_features(self, features):\n      for feature in features:\n        if feature not in self.additional_features:\n          self.selected_features.append(feature)\n    #yoser\n    def get_discount(self):\n        if self.total_cost > 400:\n            self.total_cost -= 50",
+        "detail": "main",
+        "documentation": {}
+    }
+]
